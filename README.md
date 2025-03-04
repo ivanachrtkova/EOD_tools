@@ -10,7 +10,7 @@ cwt_coef_extraction() - extracts wavelet coefficients from each EOD in signal\
 classification() - applies FIt-SNE algorithm and classifies ouput with hierarchical clustering\
 separation() - run to separate EODs from two individuals\
 
-## Sonification
+### Sonification
 Algorithms for sonification of two separated signals.
 
 #### Functions
