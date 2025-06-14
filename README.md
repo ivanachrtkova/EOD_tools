@@ -23,5 +23,6 @@ fm_sonification() - sonify signals with a frequency modulation approach
 FIt-SNE package installed https://github.com/KlugerLab/FIt-SNE
 
 ## Acknowledgements
+Chrtkova, I., Koudelka, V., Langova, V., et al. Unsupervised Approach for Electric Signal Separation in Gnathonemus petersii: Linking Behavior and Electrocommunication. 2025.03.04.641376 Preprint at https://doi.org/10.1101/2025.03.04.641376 (2025).
 
 Linderman, G.C., Rachh, M., Hoskins, J.G. et al. Fast interpolation-based t-SNE for improved visualization of single-cell RNA-seq data. Nat Methods 16, 243–245 (2019). https://doi.org/10.1038/s41592-018-0308-4
