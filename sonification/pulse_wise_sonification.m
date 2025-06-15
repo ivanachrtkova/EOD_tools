@@ -1,3 +1,4 @@
+% Run for EOD sonification via Pulse-wise approach
 
 %% data initialization
 
@@ -18,11 +19,11 @@ tones_weight = "normalized"; % "amplitude" - maintains information about eod amp
 f1 = 1.5e3; % first tone frequency
 f2 = 15e3; % second tone frequency
 
-output_filename = "pulse_wise_sonification.wav";
+output_filename = "pulse_wise_sonification.wav"; % filename for sonification ouput
 
 %% sonification
 
-% find eod location
+% find EODs locations
 [~,locsA] = findpeaks(abs(sig_A).^2,'MinPeakDistance', eod_distance, 'MinPeakHeight', eod_height^2);
 [~,locsB] = findpeaks(abs(sig_B).^2,'MinPeakDistance', eod_distance, 'MinPeakHeight', eod_height^2);
 
@@ -36,7 +37,7 @@ tone_2 = sin(2*pi*f2*t2);
 sig_Atone = zeros(length(sig_A),1);
 sig_Btone = zeros(length(sig_B),1);
 
-
+% Sonification - insert tone to specific EOD locations 
 if tones_weight == "amplitude"
     for i=1:length(locsA)
         sig_Atone(locsA(i)-floor(eod_len/2):locsA(i)+floor(eod_len/2)) = 0.25*tone_1*abs(sig_A(locsA(i)));
